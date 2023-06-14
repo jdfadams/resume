@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[11pt]{article}
 
 % \usepackage[colorlinks=true, urlcolor=blue]{hyperref}
 \usepackage[hidelinks]{hyperref}
@@ -21,7 +21,7 @@
 
 \usepackage{enumitem}
 \setlist{nosep}
-\setlist[itemize]{leftmargin=1cm,rightmargin=\leftmargin}
+\setlist[itemize]{leftmargin=0.5cm}
 
 \pagenumbering{gobble}
 
@@ -36,19 +36,22 @@
 
 \begin{center}
   \textbf{\Large\fullname} \\[\baselineskip]
-  \href{mailto:\email}{\email} \quad
-  \href{tel:\phone}{\phone} \quad
-  \href{http://linkedin.com/in/jdfadams}{linkedin.com/in/jdfadams} \quad
-  \href{http://github.com/jdfadams}{github.com/jdfadams}
+  \begin{inparaitem}
+    \item \href{mailto:\email}{\email}
+    \item \href{tel:\phone}{\phone}
+    \item \href{http://linkedin.com/in/jdfadams}{linkedin.com/in/jdfadams}
+    \item \href{http://github.com/jdfadams}{github.com/jdfadams}
+  \end{inparaitem}
 \end{center}
 
 \section*{Employment}
-\textbf{Software Development Engineer} \emph{Amazon} \hfill \textbf{08/2021--present}
+\textbf{Software Development Engineer} \emph{Amazon} \hfill \textbf{08/2021 -- present}
 \begin{itemize}
-  \item Designed Kinesis-based orchestration within workflow to eliminate contention in critical processing
-  \item Implemented workflow orchestrator-level retry mechanism, reducing the frequency high severity events
-  \item Led pipeline resilience project and data clean-up affecting millions of items to improve availability
+  \item Designed Kinesis-based orchestration to eliminate contention in item processing
+  \item Led work across 3 teams to fix bad data model affecting millions of items
   \item Mentored junior engineer to develop SNS/Lambda-based static code analyzer used throughout org
+  \item Built workflow-level retry mechanism, halving contention and reducing high-severity customer tickets
+  \item Vended global schema translation library to ease migration of legacy item processing tenants
   %\item Modernized legacy systems for catalog ingestion (Java, AWS)
   %\item Resolved customer-facing operational issues related to contention, availability, and consistency
   %\item Designed and implemented a retry mechanism to improve availability of services behind a workflow orchestrator
@@ -59,22 +62,22 @@
 
 \verticalspace
 
-\textbf{Software Engineer (Remote)} \emph{Mathematical Sciences Publishers} \hfill \textbf{12/2016--07/2021}
+\textbf{Software Engineer (Remote)} \emph{Mathematical Sciences Publishers} \hfill \textbf{12/2016 -- 07/2021}
 \begin{itemize}
-  %\item Reduced testing time from 3 person-weeks to 20 minutes by writing comprehensive integration tests (Node.js, Cypress)
-  \item Coordinated with client to aggregate >15 years of journal data, translate it into a proprietary format, and deliver it
-  \item Built customer data look-up service, drastically increasing efficiency of customer support and data curation teams
+  \item Reduced testing time from 3 person-weeks to 20 minutes by writing comprehensive e2e tests
+  \item Worked with client to build ETL infrastructure for >15 years of journal data
+  \item Built customer data look-up service, eliminating manual look-ups by customer support and data curation teams
   \item Prototyped a GraphQL API to integrate article submission with client workflows
-  \item Improved load time and browser support for EditFlow using js/caching techniques
-  \item Refactored legacy email machinery to use an external service, improving maintainability and increasing successful send rate
+  % \item Improved load time and browser support for EditFlow using js/caching techniques
+  \item Refactored legacy email machinery to call an external service, increasing successful send rate
   % \item Overhauled EditFlow configuration machinery to improve portability and permit versioning
 \end{itemize}
 
 \verticalspace
 
-\textbf{Postdoctoral Fellow in Mathematics} \emph{University of Toronto} \hfill \textbf{08/2016--12/2016}
+\textbf{Postdoctoral Fellow in Mathematics} \emph{University of Toronto} \hfill \textbf{08/2016 -- 12/2016}
 \begin{itemize}
-  \item Studied quasiconformal maps, Teichm\"{u}ller spaces, and dynamical systems
+  \item Researched quasiconformal maps, Teichm\"{u}ller spaces, and dynamical systems
   \item Taught 3rd-year undergraduate course on complex analysis
   \item Co-organized research seminar on dynamical systems
 \end{itemize}
@@ -121,6 +124,25 @@ Dissertation: \href{http://hdl.handle.net/11401/76376}{Infinitely primitively re
   \item PHP
   \item Docker
   \item Linux
+  \item Mathematics
+\end{inparaitem}
+
+\section*{Interests}
+\noindent\textbf{C++}
+\begin{inparaitem}
+\item Implemented a genetic algorithm for the traveling salesman problem
+\item Approximated continuous functions by neural networks
+\item Compressed files using the Huffman algorithm
+\item Wrote libraries for arbitrary precision computation
+\item Wrote FLTK application to visualize dynamics of curves under polynomial maps
+\end{inparaitem}
+\\
+\noindent\textbf{Fun}
+\begin{inparaitem}
+\item Summited Denali via the West Buttress in 2009
+\item Climbed Time Wave Zero (El Portrero Chico), Cloud Tower (Red Rocks), and The Vampire (Tahquitz)
+\item Ran the full Imlay in a day (Zion)
+\item Taught t'ai chi ch'uan at Riverside Community College and for the Multiple Sclerosis Society (2007--2008)
 \end{inparaitem}
 
 % \section*{Interests}
